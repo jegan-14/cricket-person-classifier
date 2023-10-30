@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <title>Sports person classifier</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Cricket person classifier
+        </h1>
+    </header>
+    <div class="img-container">
+        <div class="img-card">
+            <img src="./Images/ben-stokes-test-cricket-dec-2022.jpg" alt="">
+            <h2>BEN STOKES</h2>
+        </div>
+        <div class="img-card">
+            <img src="./Images/dhoni.webp" alt="">
+            <h2>MS DHONI</h2>
+        </div>
+        <div class="img-card">
+            <img src="./Images/smith.webp" alt="">
+            <h2>STEVE SMITH</h2>
+        </div>
+        <div class="img-card">
+            <img src="./Images/sachin.jpg" alt="">
+            <h2>SACHIN TENDULKAR</h2>
+        </div>
+        <div class="img-card">
+            <img src="./Images/Virat_Kohli_during_the_India_vs_Aus_4th_Test_match_at_Narendra_Modi_Stadium_on_09_March_2023.jpg" alt="">
+            <h2>VIRAT KOHLI
+            </h2>
+        </div>
+    </div>
+    <div class="upload-result">
+    <div class="file-upload card">
+        <form > 
+            <h3>Upload your image to classify</h3>
+            <input type="file" id="fileInput" accept="image/*">
+            <input type="button" value="CLASSIFY" id="btn">
+        </form>
+    </div>
+    <div class="result card">
+        <h3 class="error">Classifier cannot detect 2 eyes and mouth in you image .Upload something else</h3>
+        <h3 class="classified ms_dhoni">The image is MS DHONI</h3>
+        <h3 class="classified ben_stokes">The image is BEN STOKES</h3>
+        <h3 class="classified sachin_tendulkar">The image is SACHIN TENDULKAR</h3>
+        <h3 class="classified steve_smith">The image is STEVE SMITH</h3>
+        <h3 class="classified virat_kohli">The image is VIRAT KOHLI</h3>
+        <p></p>
+    </div>
+</div>
+<script src="app.js"></script>
+
+<!-- {"ben_stokes": 0, "ms_dhoni": 1, "sachin_tendulkar": 2, "steve_smith": 3, "virat_kohli": 4} -->
+</body>
+</html>
